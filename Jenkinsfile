@@ -20,8 +20,7 @@ pipeline {
                 script {               
                     bat 'docker pull aquasec/tfsec'
                     bat 'docker run --rm -v "$(pwd):/src" aquasec/tfsec .'
-                    
-                    }
+                      }
                 }
             }
         
