@@ -17,10 +17,8 @@ pipeline {
 
       stage('tfsec') {
             steps {
-                script {
-                   bat 'docker pull aquasec/tfsec'
-                   
-
+                script {               
+                   bat 'C:\Program Files\Docker\Docker\resources\bin/docker run --rm -v "$(pwd):/src" aquasec/tfsec .'
                     }
                 }
             }
