@@ -18,7 +18,7 @@ pipeline {
       stage('tfsec') {
             steps {
                 script {               
-                   bat 'C:\Program Files\Docker\Docker\resources\bin\docker run --rm -v "$(pwd):/src" aquasec/tfsec .'
+                   bat 'C:/Program Files/Docker/Docker/resources/bin/docker run --rm -v "$(pwd):/src" aquasec/tfsec .'
                     }
                 }
             }
